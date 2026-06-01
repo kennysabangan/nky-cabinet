@@ -70,7 +70,7 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky's Trusted Cabinet Refacing Service",
+  heroTagline: "Northern Kentucky Cabinet Refacing Service",
   heroSubtext: "New kitchen look without the full remodel cost. Call for a free estimate.",
   heroAlt: "Professional cabinet refacing in a Northern Kentucky kitchen",
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does cabinet refacing cost?",
       answer:
-        "$4,000-$9,500 for a typical kitchen (up to 250 sq ft). That's 50-70% less than full cabinet replacement. Call (859) 555-0900 for a free estimate.",
+        "Call (859) 555-0900 for a free estimate. Refacing saves 50-70% compared to full replacement.",
     },
     {
       question: "How long does refacing take?",
@@ -140,7 +140,7 @@ export const siteConfig = {
     {
       question: "How long does refacing last?",
       answer:
-        "Professionally refaced cabinets last 15-20+ years with proper care. We use commercial-grade materials and adhesives designed to last.",
+        "Refaced cabinets provide long-lasting results with proper care. We use commercial-grade materials and adhesives designed to last.",
     },
     {
       question: "Do you offer financing?",
@@ -250,7 +250,7 @@ export const siteConfig = {
       lat: "39.0625",
       lng: "-84.5916",
       intro:
-        "Villa Hills is one of Northern Kentucky's premier residential communities, and the kitchens here deserve nothing less than the best. NKY Cabinet Refacing Pros delivers premium cabinet refacing services that match Villa Hills' high standards. From classic wood tones to contemporary painted finishes, we offer hundreds of door styles and colors. Villa Hills homeowners trust us because we use commercial-grade materials, deliver flawless installations, and finish in just 3-5 days.",
+        "Villa Hills is one of Northern Kentucky's premier residential communities, and the kitchens here deserve quality service. NKY Cabinet Refacing Pros delivers premium cabinet refacing services that match Villa Hills' high standards. From classic wood tones to contemporary painted finishes, we offer hundreds of door styles and colors. Villa Hills homeowners trust us because we use commercial-grade materials, deliver flawless installations, and finish in just 3-5 days.",
     },
     {
       name: "Crescent Springs, KY",
@@ -307,7 +307,7 @@ export const siteConfig = {
       lat: "39.2289",
       lng: "-84.3541",
       intro:
-        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Cabinet Refacing Pros extends our premium cabinet refacing services to Montgomery homeowners who expect nothing but the best. The large kitchens and high-end finishes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From homes near the downtown village center to sprawling estates, we bring meticulous attention to detail.",
+        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Cabinet Refacing Pros extends our premium cabinet refacing services to Montgomery homeowners who expect quality service. The large kitchens and high-end finishes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From homes near the downtown village center to sprawling estates, we bring meticulous attention to detail.",
     },
     {
       name: "Deer Park, OH",
@@ -315,7 +315,7 @@ export const siteConfig = {
       lat: "39.2053",
       lng: "-84.3922",
       intro:
-        "Deer Park is a welcoming, family-friendly community just north of Cincinnati, and NKY Cabinet Refacing Pros is proud to bring our cabinet refacing services to this great neighborhood. From the well-kept ranch homes along Blue Ash Road to the two-story colonials in the residential side streets, Deer Park kitchens deserve a fresh new look. We offer flexible scheduling, fair pricing, and the kind of dependable service that Deer Park homeowners appreciate. A new kitchen in 3-5 days.",
+        "Deer Park is a welcoming, family-friendly community just north of Cincinnati, and NKY Cabinet Refacing Pros is proud to bring our cabinet refacing services to this great neighborhood. From the well-kept ranch homes along Blue Ash Road to the two-story colonials in the residential side streets, Deer Park kitchens deserve a fresh new look. We offer flexible scheduling, Flexible scheduling, and the kind of dependable service that Deer Park homeowners appreciate. A new kitchen in 3-5 days.",
     },
     {
       name: "Amberly, OH",
@@ -355,7 +355,7 @@ export const siteConfig = {
       lat: "39.1283",
       lng: "-84.4317",
       intro:
-        "Mt. Lookout is a charming, walkable neighborhood on Cincinnati's east side, just across the river from Northern Kentucky. NKY Cabinet Refacing Pros serves Mt. Lookout homeowners with professional cabinet refacing that keeps kitchens looking their best. The neighborhood's mix of older bungalows, updated colonials, and new construction means we've seen every kitchen layout Mt. Lookout has to offer. We use commercial-grade materials designed to last 15-20+ years.",
+        "Mt. Lookout is a charming, walkable neighborhood on Cincinnati's east side, just across the river from Northern Kentucky. NKY Cabinet Refacing Pros serves Mt. Lookout homeowners with professional cabinet refacing that keeps kitchens looking their best. The neighborhood's mix of older bungalows, updated colonials, and new construction means we've seen every kitchen layout Mt. Lookout has to offer. We use commercial-grade materials designed for long-lasting results.",
     },
     {
       name: "Oakley, OH",
@@ -387,13 +387,13 @@ export const siteConfig = {
   testimonials: [
     {
       quote:
-        "NKY Cabinet Refacing Pros transformed our kitchen in Florence in just 4 days. New shaker doors, soft-close hinges, and new hardware. Looks like a $30K kitchen for a fraction of the cost.",
+        "NKY Cabinet Refacing Pros transformed our kitchen in Florence in just 4 days. New shaker doors, soft-close hinges, and new hardware. Looks like a high-end kitchen for a fraction of the cost.",
       name: "Jennifer M.",
       city: "Florence, KY",
     },
     {
       quote:
-        "We thought we needed all new cabinets. They showed us refacing was the way to go. Our Covington kitchen looks brand new. Saved us over $15,000.",
+        "We thought we needed all new cabinets. They showed us refacing was the way to go. Our Covington kitchen looks brand new. Saved us money.",
       name: "Robert T.",
       city: "Covington, KY",
     },
@@ -416,12 +416,12 @@ export const siteConfig = {
     {
       name: "Jennifer M.",
       location: "Florence, KY",
-      text: "NKY Cabinet Refacing Pros transformed our kitchen in Florence in just 4 days. New shaker doors, soft-close hinges, and new hardware throughout. Looks like a $30K kitchen for a fraction of the cost. Best home improvement decision we've ever made.",
+      text: "NKY Cabinet Refacing Pros transformed our kitchen in Florence in just 4 days. New shaker doors, soft-close hinges, and new hardware throughout. Looks like a high-end kitchen for a fraction of the cost. Quality home improvement decision we've ever made.",
     },
     {
       name: "Robert T.",
       location: "Covington, KY",
-      text: "We thought we needed all new cabinets. They showed us refacing was the way to go. Our Covington kitchen looks brand new. Saved us over $15,000 compared to full replacement. The team was professional and the results speak for themselves.",
+      text: "We thought we needed all new cabinets. They showed us refacing was the way to go. Our Covington kitchen looks brand new. Saved us money compared to full replacement. The team was professional and the results speak for themselves.",
     },
     {
       name: "Sarah K.",
@@ -441,7 +441,7 @@ export const siteConfig = {
     {
       name: "Dave S.",
       location: "Newport, KY",
-      text: "Called for cabinet refacing on our home in Newport. They gave us a fair price and came out the same week. Our kitchen went from 1990s oak to modern white shaker. They even installed soft-close hinges on every door. Great service, great price.",
+      text: "Called for cabinet refacing on our home in Newport. They gave us a competitive price and came out the same week. Our kitchen went from 1990s oak to modern white shaker. They even installed soft-close hinges on every door. Great service, great service.",
     },
     {
       name: "Karen L.",
@@ -451,7 +451,7 @@ export const siteConfig = {
     {
       name: "Tom W.",
       location: "Fort Thomas, KY",
-      text: "Our Fort Thomas kitchen had original 1970s cabinets. NKY Cabinet Refacing Pros made them look brand new with new doors, drawer fronts, and crown molding. The whole project took 5 days. Every detail was perfect. Best cabinet refacing in NKY.",
+      text: "Our Fort Thomas kitchen had original 1970s cabinets. NKY Cabinet Refacing Pros made them look brand new with new doors, drawer fronts, and crown molding. The whole project took 5 days. Every detail was perfect. Professional cabinet refacing service in NKY.",
     },
   ] as { name: string; location: string; text: string }[],
 };
