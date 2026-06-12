@@ -34,8 +34,8 @@ export interface Testimonial {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Cabinet Refacing Pros",
-  phone: "(859) 555-0900",
-  phoneE164: "+18595550900",
+  phone: "(859) 900-8065",
+  phoneE164: "+18599008065",
   domain: "nkycabinetpros.com",
   siteUrl: "https://nkycabinetpros.com",
 
@@ -106,7 +106,7 @@ export const siteConfig = {
       slug: "hardware-accessories",
       description:
         "New hinges, handles, drawer slides, pull-out shelves, lazy susans, and soft-close upgrades. Small changes that make a big difference in your kitchen's function.",
-      photo: "/photos/screen-cleaning.jpg",
+      photo: "/photos/cabinet-hardware.jpg",
     },
   ] as Service[],
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does cabinet refacing cost?",
       answer:
-        "Call (859) 555-0900 for a free estimate. Refacing saves 50-70% compared to full replacement.",
+        "Call (859) 900-8065 for a free estimate. Refacing saves 50-70% compared to full replacement.",
     },
     {
       question: "How long does refacing take?",
@@ -150,7 +150,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 555-0900. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
+        "Call (859) 900-8065. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
     },
   ] as FAQ[],
 
