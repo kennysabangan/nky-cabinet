@@ -26,4 +26,4 @@ Allow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://nkycabinetpros.com/sitemap-index.xml
+Sitemap: https://www.nkycabinetpros.com/sitemap-index.xml
