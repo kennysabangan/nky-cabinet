@@ -14,7 +14,7 @@ const serviceSchema = {
     "name": businessName,
     "telephone": phoneE164,
   },
-  "areaServed": { "@type": "State", "name": "Kentucky" },
+  "areaServed": cities.map((c) => ({ "@type": "City", "name": c.name })),
   "description": `Professional ${serviceKeywordPlural} for residential and commercial properties in ${city}.`,
 };
 
@@ -29,8 +29,8 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services ${city} | ${businessName}`}
-  description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We provide ${serviceKeywordPlural} on homes, offices, and commercial buildings across ${region}. Call ${phone} for a free estimate.`}
+  title={`Cabinet Refacing Service Areas in Northern Kentucky | ${businessName}`}
+  description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We reface kitchen cabinets, vanities, and built-ins in homes across ${region}. Call ${phone} for a free estimate.`}
   canonicalURL={`${siteUrl}/cabinet/`}
   schema={[breadcrumbSchema, serviceSchema]}
 >
@@ -78,15 +78,15 @@ const breadcrumbSchema = {
 
   <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about the cabinets you'd like to update. We'll ask about your kitchen layout, your style preferences, and what look you're going for.</p>
 
-  <p><strong>Step 2: Get Your Free Estimate.</strong> We'll give you a clear, upfront price for your {serviceKeyword}. No hidden fees, no surprises. Most homeowners are amazed at how much they save compared to full replacement.</p>
+  <p><strong>Step 2: Get Your Free Estimate.</strong> You'll get a clear price before any work starts. Refacing typically costs 50-70% less than full cabinet replacement.</p>
 
-  <p><strong>Step 3: We Reface Your Cabinets.</strong> Our team arrives on time and installs new doors, drawer fronts, and hardware in just 3-5 days. We work efficiently and treat your home with respect.</p>
+  <p><strong>Step 3: We Reface Your Cabinets.</strong> New doors, drawer fronts, and hardware are installed on your existing cabinet boxes. Most kitchens take 3-5 days.</p>
 
-  <p><strong>Step 4: Enjoy Your New Kitchen.</strong> Your kitchen will look completely transformed. Not happy with the results? We'll make it right. That's our satisfaction guarantee.</p>
+  <p><strong>Step 4: Enjoy Your New Kitchen.</strong> Your kitchen will look completely transformed. Before the crew leaves, walk through the kitchen with them so anything you're unsure about can be addressed on the spot.</p>
 
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Service Areas</h2>
 
-  <p>We provide {serviceKeywordPlural} across {city}. We serve:</p>
+  <p>Our main service areas in Boone, Kenton, and Campbell counties:</p>
 
   <ul>
     {cities.map((c) => (
@@ -108,7 +108,7 @@ const breadcrumbSchema = {
 <section class="bg-brand-dark text-white">
   <div class="cta-strip container">
     <h2 class="text-white text-xl md:text-2xl font-bold mb-2">Call Now for {serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {city}</h2>
-    <p class="text-white/90 text-base mb-4">We provide ${serviceKeywordPlural} across {region}.</p>
+    <p class="text-white/90 text-base mb-4">We provide {serviceKeywordPlural} across {region}.</p>
     <PhoneCTA label="Call Now" />
   </div>
 </section>
