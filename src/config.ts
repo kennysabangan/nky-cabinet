@@ -33,8 +33,8 @@ export interface FAQ {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Cabinet Refacing Pros",
-  phone: "(859) 900-8065",
-  phoneE164: "+18599008065",
+  phone: "(714) 494-9486",
+  phoneE164: "+17144949486",
   domain: "nkycabinetpros.com",
   siteUrl: "https://nkycabinetpros.com",
 
@@ -118,7 +118,7 @@ export const siteConfig = {
     {
       question: "How much does cabinet refacing cost?",
       answer:
-        "Call (859) 900-8065 for a free estimate. Refacing saves 50-70% compared to full replacement.",
+        "Call (714) 494-9486 for a free estimate. Refacing saves 50-70% compared to full replacement.",
     },
     {
       question: "How long does refacing take?",
@@ -148,7 +148,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 900-8065. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
+        "Call (714) 494-9486. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
     },
   ] as FAQ[],
 
