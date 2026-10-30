@@ -1,14 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PhoneCTA from '../../components/PhoneCTA.astro';
-import { siteConfig } from '../../config';
+import { siteConfig, pageTitle } from '../../config';
+const serviceTitle = siteConfig.serviceTitle;
 
 const { businessName, phone, phoneE164, siteUrl, serviceKeyword, serviceKeywordPlural, city, region, services, cities } = siteConfig;
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1),
+  "serviceType": serviceTitle,
   "provider": {
     "@type": "LocalBusiness",
     "name": businessName,
@@ -29,8 +30,8 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`Cabinet Refacing Service Areas in Northern Kentucky | ${businessName}`}
-  description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We reface kitchen cabinets, vanities, and built-ins in homes across ${region}. Call ${phone} for a free estimate.`}
+  title={pageTitle("Cabinet Painting & Refinishing Service Areas in NKY")}
+  description={`Cabinet painting, refinishing, and refacing across Northern Kentucky for kitchens, vanities, and built-ins. Call ${phone} for a free estimate.`}
   canonicalURL={`${siteUrl}/cabinet/`}
   schema={[breadcrumbSchema, serviceSchema]}
 >
@@ -38,7 +39,7 @@ const breadcrumbSchema = {
 <!-- Hero -->
 <section class="hero-section">
   <div class="container">
-    <h1>{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services in {city}</h1>
+    <h1>{serviceTitle} Services in {city}</h1>
     <p class="hero-sub">Residential {serviceKeyword}, commercial {serviceKeyword}, and more. Serving all of {region}.</p>
     <PhoneCTA />
   </div>
@@ -48,7 +49,7 @@ const breadcrumbSchema = {
 <div class="container py-6 text-center">
   <img
     src="/photos/hero.jpg"
-    alt={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}`}
+    alt={`${serviceTitle} services in ${city}`}
     class="site-photo mx-auto max-w-2xl"
     loading="eager"
   />
@@ -56,9 +57,9 @@ const breadcrumbSchema = {
 
 <!-- Services -->
 <div class="content-section">
-  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4">Our {serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services</h2>
+  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4">Our {serviceTitle} Services</h2>
 
-  <p>{businessName} provides professional {serviceKeywordPlural} throughout {city}. We reface kitchen cabinets, bathroom vanities, and built-in cabinetry in homes and businesses. Here are the {serviceKeywordPlural} we offer:</p>
+  <p>{businessName} provides professional {serviceKeywordPlural} throughout {city}. We paint, refinish, and reface kitchen cabinets, bathroom vanities, and built-in cabinetry in homes and businesses. Here are the {serviceKeywordPlural} we offer:</p>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
     {services.map((service) => (
@@ -72,25 +73,25 @@ const breadcrumbSchema = {
     ))}
   </div>
 
-  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">How Our {serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Service Works</h2>
+  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">How Our {serviceTitle} Service Works</h2>
 
-  <p>Getting your cabinets refaced by {businessName} is easy. Here's how it works:</p>
+  <p>Getting your cabinets painted, refinished, or refaced by {businessName} is easy. Here's how it works:</p>
 
   <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about the cabinets you'd like to update. We'll ask about your kitchen layout, your style preferences, and what look you're going for.</p>
 
-  <p><strong>Step 2: Get Your Free Estimate.</strong> You'll get a clear price before any work starts. Refacing typically costs 50-70% less than full cabinet replacement.</p>
+  <p><strong>Step 2: Get Your Free Estimate.</strong> You'll get a clear price before any work starts. Painting or refinishing is usually the least expensive way to update cabinets, and refacing typically costs 50-70% less than full cabinet replacement.</p>
 
-  <p><strong>Step 3: We Reface Your Cabinets.</strong> New doors, drawer fronts, and hardware are installed on your existing cabinet boxes. Most kitchens take 3-5 days.</p>
+  <p><strong>Step 3: We Update Your Cabinets.</strong> For painting or refinishing, doors and drawer fronts are cleaned, prepped, and finished in the color you chose. For refacing, new doors, drawer fronts, and hardware are installed on your existing cabinet boxes; most kitchens take 3-5 days.</p>
 
   <p><strong>Step 4: Enjoy Your New Kitchen.</strong> Your kitchen will look completely transformed. Before the crew leaves, walk through the kitchen with them so anything you're unsure about can be addressed on the spot.</p>
 
-  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Service Areas</h2>
+  <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">{serviceTitle} Service Areas</h2>
 
   <p>Our main service areas in Boone, Kenton, and Campbell counties:</p>
 
   <ul>
     {cities.map((c) => (
-      <li><a href={`/cabinet/${c.slug}/`}>{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {c.name}</a></li>
+      <li><a href={`/cabinet/${c.slug}/`}>{serviceTitle} in {c.name}</a></li>
     ))}
   </ul>
 </div>
@@ -107,7 +108,7 @@ const breadcrumbSchema = {
 <!-- Final CTA -->
 <section class="bg-brand-dark text-white">
   <div class="cta-strip container">
-    <h2 class="text-white text-xl md:text-2xl font-bold mb-2">Call Now for {serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {city}</h2>
+    <h2 class="text-white text-xl md:text-2xl font-bold mb-2">Call Now for {serviceTitle} in {city}</h2>
     <p class="text-white/90 text-base mb-4">We provide {serviceKeywordPlural} across {region}.</p>
     <PhoneCTA label="Call Now" />
   </div>

@@ -68,14 +68,15 @@ export const siteConfig = {
   geoLng: "-84.5",
 
   // ── SEO keywords ──────────────────────────────────────────────────
-  serviceKeyword: "cabinet refacing",
-  serviceKeywordPlural: "cabinet refacing services",
+  serviceKeyword: "cabinet painting and refinishing",
+  serviceKeywordPlural: "cabinet painting and refinishing services",
+  serviceTitle: "Cabinet Painting & Refinishing",
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky Cabinet Refacing Service",
-  heroSubtext: "New kitchen look without the full remodel cost. Call for a free estimate.",
-  heroAlt: "Professional cabinet refacing in a Northern Kentucky kitchen",
+  heroTagline: "Cabinet Painting & Refinishing in Cincinnati & Northern Kentucky",
+  heroSubtext: "Painted, refinished, or refaced cabinets give your kitchen a new look without the full remodel cost. Call for a free estimate.",
+  heroAlt: "Updated kitchen cabinets in a Northern Kentucky home",
 
   // ── Computed city lists ──────────────────────────────────────────
   get cityListShort() {
@@ -91,24 +92,24 @@ export const siteConfig = {
   // ── Services ──────────────────────────────────────────────────────
   services: [
     {
-      title: "Kitchen Cabinet Refacing",
-      slug: "kitchen-refacing",
+      title: "Cabinet Painting",
+      slug: "cabinet-painting",
       description:
-        "Replace your cabinet doors and drawer fronts while keeping the existing boxes. Choose from hundreds of styles, colors, and finishes. 3-5 day installation. 50-70% less than full replacement.",
+        "Kitchen cabinets, bathroom vanities, and built-ins painted in the color you choose. Doors and drawer fronts are cleaned, sanded, and primed before the finish coats go on.",
       photo: "/photos/residential.jpg",
     },
     {
-      title: "Cabinet Door Replacement",
-      slug: "door-replacement",
+      title: "Cabinet Refinishing",
+      slug: "cabinet-refinishing",
       description:
-        "Just need new doors? We custom-build and install replacement doors in any style — shaker, raised panel, flat panel, and more. Match your existing kitchen or go for a new look.",
-      photo: "/photos/commercial.jpg",
+        "Worn, faded, or dated cabinet finishes restored or changed with new stain, clear coat, or paint. A good fit when your cabinet boxes and doors are solid and you like the door style.",
+      photo: "/photos/hero.jpg",
     },
     {
-      title: "Cabinet Hardware & Accessories",
-      slug: "hardware-accessories",
+      title: "Cabinet Refacing",
+      slug: "kitchen-refacing",
       description:
-        "New hinges, handles, drawer slides, pull-out shelves, lazy susans, and soft-close upgrades. Small changes that make a big difference in your kitchen's function.",
+        "Want a new door style? Refacing replaces doors, drawer fronts, and hardware while keeping your existing cabinet boxes. Soft-close and pull-out upgrades available. Most kitchens done in 3-5 days.",
       photo: "/photos/cabinet-hardware.jpg",
     },
   ] as Service[],
@@ -116,19 +117,24 @@ export const siteConfig = {
   // ── FAQs ──────────────────────────────────────────────────────────
   faqs: [
     {
-      question: "How much does cabinet refacing cost?",
+      question: "How much does cabinet painting or refinishing cost?",
       answer:
-        "Call (714) 494-9486 for a free estimate. Refacing saves 50-70% compared to full replacement.",
+        "It depends on how many doors and drawer fronts you have, their condition, and the finish you want. Painting or refinishing is usually the least expensive way to update cabinets; refacing costs more but typically 50-70% less than full replacement. Call (714) 494-9486 for a free estimate.",
     },
     {
-      question: "How long does refacing take?",
+      question: "Should I paint, refinish, or reface my cabinets?",
       answer:
-        "Most kitchens take 3-5 days to install. Compare that to 4-8 weeks for a full kitchen remodel. You'll have a new-looking kitchen by the weekend.",
+        "If your cabinet boxes and doors are solid and you like the door style, painting or refinishing changes the color and finish for the least money. If you want a different door style, refacing adds new doors and drawer fronts on your existing boxes. We can talk through both when you call.",
+    },
+    {
+      question: "How long does the work take?",
+      answer:
+        "It depends on the size of the kitchen and the service. Painting and refinishing timelines vary with the number of doors and the finish, and you'll get a schedule with your estimate. Most refacing jobs take 3-5 days to install, compared to 4-8 weeks for a full kitchen remodel.",
     },
     {
       question: "Can I change the color of my cabinets?",
       answer:
-        "Yes. Refacing lets you completely change the color, style, and finish of your cabinets. From classic white to modern navy to warm wood tones — anything is possible.",
+        "Yes. Painting is the most direct way to change cabinet color, and refinishing can change the stain or finish on wood cabinets. From classic white to modern navy to warm wood tones, you choose the color.",
     },
     {
       question: "Will refacing look like new cabinets?",
@@ -220,3 +226,12 @@ export const siteConfig = {
     },
   ] as City[],
 };
+
+/**
+ * Build a page <title> that stays within 60 characters: the brand name is
+ * appended only when it fits, so the service + place always comes first.
+ */
+export function pageTitle(main: string, max = 60): string {
+  const withBrand = `${main} | ${siteConfig.businessName}`;
+  return withBrand.length <= max ? withBrand : main;
+}

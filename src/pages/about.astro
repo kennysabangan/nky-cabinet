@@ -18,7 +18,7 @@ const aboutPageSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": `About ${businessName}`,
-  "description": `${businessName} provides kitchen cabinet refacing in ${city}.`,
+  "description": `${businessName} provides cabinet painting, refinishing, and refacing in ${city}.`,
   "mainEntity": {
     "@type": "LocalBusiness",
     "name": businessName,
@@ -29,7 +29,7 @@ const aboutPageSchema = {
 
 <BaseLayout
   title={`About Us | ${businessName}`}
-  description={`${businessName} refaces kitchen cabinets and vanities in Florence, Covington, Fort Thomas, Newport, and across Northern Kentucky. How it works, what's included, and where we go.`}
+  description={`${businessName} paints, refinishes, and refaces kitchen cabinets and vanities across Northern Kentucky. How it works and where we go.`}
   canonicalURL={`${siteUrl}/about/`}
   schema={[breadcrumbSchema, aboutPageSchema]}
 >
@@ -37,7 +37,7 @@ const aboutPageSchema = {
 <section class="hero-section">
   <div class="container">
     <h1>About {businessName}</h1>
-    <p class="hero-sub">Kitchen cabinet refacing for Northern Kentucky homes.</p>
+    <p class="hero-sub">Cabinet painting, refinishing, and refacing for Cincinnati &amp; Northern Kentucky homes.</p>
     <PhoneCTA />
   </div>
 </section>
@@ -45,7 +45,7 @@ const aboutPageSchema = {
 <div class="container py-6 text-center">
   <img
     src="/photos/team.jpg"
-    alt="Cabinet refacing crew"
+    alt="Cabinet painting and refinishing crew"
     class="site-photo mx-auto max-w-2xl"
     loading="eager"
   />
@@ -54,7 +54,9 @@ const aboutPageSchema = {
 <div class="content-section">
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4">What We Do</h2>
 
-  <p>Cabinet refacing replaces the parts of your cabinets you see and touch — doors, drawer fronts, and hardware — while keeping the existing cabinet boxes. It typically costs 50-70% less than full replacement and most kitchens are done in 3-5 days, compared to 4-8 weeks for a full remodel.</p>
+  <p>We update the cabinets you already have instead of tearing them out. Cabinet painting changes the color of kitchen cabinets, vanities, and built-ins. Cabinet refinishing restores or changes a worn or dated wood finish. Both are usually the least expensive way to give a kitchen a new look.</p>
+
+  <p>If you want a different door style, cabinet refacing replaces the parts you see and touch — doors, drawer fronts, and hardware — while keeping the existing cabinet boxes. It typically costs 50-70% less than full replacement, and most kitchens are done in 3-5 days, compared to 4-8 weeks for a full remodel.</p>
 
   <ul>
     {services.map((s) => (
@@ -64,11 +66,11 @@ const aboutPageSchema = {
 
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">How a Job Works</h2>
 
-  <p><strong>1. Quote.</strong> Call {phone} or send the form. Tell us roughly how many cabinets and drawers you have, the style and color you're after, and whether you want upgrades like soft-close hinges or pull-out shelves.</p>
+  <p><strong>1. Quote.</strong> Call {phone} or send the form. Tell us roughly how many cabinet doors and drawers you have, whether you want them painted, refinished, or refaced, the color you're after, and any upgrades like soft-close hinges or pull-out shelves.</p>
 
-  <p><strong>2. Check the boxes.</strong> Refacing works best when the existing cabinet boxes are structurally sound. If any are damaged, repair or replacement options are discussed before work starts.</p>
+  <p><strong>2. Check the cabinets.</strong> Painting, refinishing, and refacing all work best when the existing cabinet boxes are structurally sound. If any are damaged, repair or replacement options are discussed before work starts.</p>
 
-  <p><strong>3. Installation.</strong> New doors, drawer fronts, and hardware go on over 3-5 days. Before the crew leaves, walk through the kitchen with them.</p>
+  <p><strong>3. The work.</strong> For painting or refinishing, surfaces are cleaned, prepped, and finished in the color you chose. For refacing, new doors, drawer fronts, and hardware go on over 3-5 days. Before the crew leaves, walk through the kitchen with them.</p>
 
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">Where We Work</h2>
 
@@ -76,7 +78,7 @@ const aboutPageSchema = {
 
   <ul>
     {cities.map((c) => (
-      <li><a href={`/cabinet/${c.slug}/`}>Cabinet refacing in {c.name}</a></li>
+      <li><a href={`/cabinet/${c.slug}/`}>Cabinet painting &amp; refinishing in {c.name}</a></li>
     ))}
   </ul>
 
@@ -85,7 +87,7 @@ const aboutPageSchema = {
 
 <section class="bg-gray-50 border-y-2 border-brand">
   <div class="cta-strip container">
-    <p class="cta-heading">Ready to Get Your Cabinets Refaced?</p>
+    <p class="cta-heading">Ready to Update Your Cabinets?</p>
     <p class="cta-sub">Call now for a free {serviceKeyword} estimate.</p>
     <PhoneCTA />
   </div>

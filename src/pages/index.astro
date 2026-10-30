@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { siteConfig } from '../config';
+const serviceTitle = siteConfig.serviceTitle;
 
 const { businessName, phone, phoneE164, serviceKeyword, serviceKeywordPlural, city, region, faqs, services, cities, heroTagline, heroSubtext, heroAlt } = siteConfig;
 
@@ -16,8 +17,8 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title={`${businessName} | ${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in ${city}`}
-  description={`Kitchen cabinet refacing in Florence, Covington, Fort Thomas, Newport, and across Northern Kentucky. New doors, drawer fronts, and hardware in 3-5 days. Free estimates: ${phone}.`}
+  title="Cabinet Painting & Refinishing | Cincinnati & NKY"
+  description="Cabinet painting and refinishing in Cincinnati & Northern Kentucky, plus cabinet refacing. Kitchens, vanities, and built-ins. Free estimates."
   schema={faqSchema}
 >
 
@@ -338,7 +339,7 @@ const faqSchema = {
   <!-- Services -->
   <section class="section">
     <h2 class="section-title">Our Services</h2>
-    <p class="section-sub">Professional {serviceKeywordPlural} for homes and businesses in {city}</p>
+    <p class="section-sub">Cabinet painting, refinishing, and refacing for homes in Cincinnati &amp; Northern Kentucky</p>
     <div class="services-grid">
       {services.map((service) => (
         <div class="service-card">
@@ -354,10 +355,10 @@ const faqSchema = {
 
   <!-- Content -->
   <section class="section">
-    <h2 class="section-title" style="text-align:left;">{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {city}</h2>
-    <p class="content-text">Cabinet refacing replaces the doors, drawer fronts, and hardware while keeping your existing cabinet boxes. It changes the whole look of a kitchen without tearing out cabinets or countertops.</p>
-    <p class="content-text">{businessName} refaces kitchen cabinets, bathroom vanities, and built-in cabinetry in homes across {city}. Whether you want to change the style, color, or finish of your cabinets, refacing can do it.</p>
-    <p class="content-text">Commercial-grade materials and adhesives are used, and refaced cabinets can last 15-20 years with proper care. Most kitchens are done in 3-5 days at typically 50-70% less than full replacement.</p>
+    <h2 class="section-title" style="text-align:left;">Cabinet Painting &amp; Refinishing in Cincinnati &amp; Northern Kentucky</h2>
+    <p class="content-text">If your cabinets are solid but the color or finish is dated, worn, or faded, cabinet painting or refinishing gives your kitchen a new look without tearing anything out. {businessName} paints and refinishes kitchen cabinets, bathroom vanities, and built-ins for homeowners in Northern Kentucky and the greater Cincinnati area.</p>
+    <p class="content-text">Painting changes the color completely, from classic white to navy or green. Refinishing restores or changes the finish on wood cabinets with new stain, clear coat, or paint. Both keep your existing doors, boxes, and countertops in place.</p>
+    <p class="content-text">Want a different door style? Cabinet refacing replaces the doors, drawer fronts, and hardware while keeping your existing cabinet boxes. Most refacing jobs are done in 3-5 days at typically 50-70% less than full replacement.</p>
   </section>
 
   <!-- Service Areas -->
@@ -366,7 +367,7 @@ const faqSchema = {
     <p class="section-sub">Our main service areas in Boone, Kenton, and Campbell counties. Nearby but not listed? Call {phone}.</p>
     <ul class="areas-list">
       {cities.map((c) => (
-        <li><a href={`/cabinet/${c.slug}/`}>{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {c.name}</a></li>
+        <li><a href={`/cabinet/${c.slug}/`}>{serviceTitle} in {c.name}</a></li>
       ))}
     </ul>
   </section>
